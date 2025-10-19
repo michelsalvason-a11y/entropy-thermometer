@@ -79,5 +79,57 @@
 
     .card:hover {
       transform: translateY(-4px);
-      box
+      box-shadow:
+        0 0 20px rgba(255,122,0,0.25),
+        0 0 40px rgba(255,122,0,0.1);
+    }
 
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0.5rem 0 0;
+    }
+
+    li {
+      margin: 0.3rem 0;
+      font-size: 0.95rem;
+    }
+
+    footer {
+      padding: 2rem 1rem;
+      border-top: 1px solid #222;
+      color: #666;
+      font-size: 0.9rem;
+      animation: fadeSlide 1s ease-out both;
+    }
+
+    /* Mobile tweaks */
+    @media (max-width: 480px) {
+      header { padding: 1.5rem 0.8rem; }
+      main { padding: 1.2rem 0.8rem 2rem; }
+      .card { padding: 1.2rem 1rem; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>The Entropy Thermometer</h1>
+    <h2>Reading the chaos so you don’t have to.</h2>
+  </header>
+  <main>
+    <div class="card">
+      <p><strong>🔥 Current Heat Level:</strong> 73 / 100</p>
+      <p>Macro-Politics and Crypto volatility are driving today’s noise.</p>
+    </div>
+    <div class="card">
+      <p><strong>Top Signals:</strong></p>
+      <ul>
+        <li>• “No Kings” protests trending worldwide</li>
+        <li>• BTC leverage flush and recovery chatter</li>
+        <li>• Publishers vs Google AI Overviews escalation</li>
+      </ul>
+    </div>
+  </main>
+  <footer>© 2025 Michel</footer>
+</body>
+</html>
